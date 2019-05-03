@@ -756,7 +756,6 @@ public class Settings extends SettingsActivity {
             super(ColorModeScreen.KEY, ColorModePreferenceFragment.class);
         }
     }
-
     public static class SafetyCenterActivity extends SettingsActivity {
 
         private static final String TAG = "SafetyCenterActivity";
@@ -867,4 +866,7 @@ public class Settings extends SettingsActivity {
             }
         }
     }
+
+    // LiveDisplay
+    public static class LiveDisplaySettingsActivity extends SettingsActivity { /* empty */ }
 }
