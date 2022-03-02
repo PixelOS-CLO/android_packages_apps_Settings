@@ -56,6 +56,8 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settingslib.wifi.WifiEnterpriseRestrictionUtils;
 
+import ink.kscope.settings.wifi.tether.WifiTetherHiddenSsidPreferenceController;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -98,6 +100,9 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     static final String KEY_WIFI_HOTSPOT_SPEED = "wifi_hotspot_speed";
     @VisibleForTesting
     static final String KEY_INSTANT_HOTSPOT = "wifi_hotspot_instant";
+    @VisibleForTesting
+    static final String KEY_WIFI_TETHER_HIDDEN_SSID =
+            WifiTetherHiddenSsidPreferenceController.PREF_KEY;
 
     @VisibleForTesting
     SettingsMainSwitchBar mMainSwitchBar;
@@ -113,6 +118,8 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     WifiTetherSecurityPreferenceController mSecurityPreferenceController;
     @VisibleForTesting
     WifiTetherAutoOffPreferenceController mWifiTetherAutoOffPreferenceController;
+    @VisibleForTesting
+    WifiTetherHiddenSsidPreferenceController mHiddenSsidPrefController;
 
     private WifiManager mWifiManager;
     @VisibleForTesting
@@ -237,6 +244,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
 // QTI_BEGIN: 2021-05-18: WLAN: Revert "Smart Router settings UI changes"
         mApBandPreferenceController = use(WifiTetherApBandPreferenceController.class);
 // QTI_END: 2021-05-18: WLAN: Revert "Smart Router settings UI changes"
+        mHiddenSsidPrefController = use(WifiTetherHiddenSsidPreferenceController.class);
     }
 
     @Override
@@ -326,6 +334,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
 // QTI_END: 2021-05-18: WLAN: Revert "Smart Router settings UI changes"
         controllers.add(
                 new WifiTetherAutoOffPreferenceController(context, KEY_WIFI_TETHER_AUTO_OFF));
+        controllers.add(new WifiTetherHiddenSsidPreferenceController(context, listener));
 
         return controllers;
     }
@@ -459,6 +468,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
             configBuilder.setBand(mApBandPreferenceController.getBandIndex());
         }
 // QTI_END: 2021-07-13: WLAN: Softap: Add support for Dual Band (2G+5G) configuration from UI
+        configBuilder.setHiddenSsid(mHiddenSsidPrefController.isHiddenSsidEnabled());
         return configBuilder.build();
     }
 
@@ -475,6 +485,8 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
         use(WifiTetherApBandPreferenceController.class)
                 .updateDisplay();
 // QTI_END: 2021-05-18: WLAN: Revert "Smart Router settings UI changes"
+        use(WifiTetherHiddenSsidPreferenceController.class)
+                .updateDisplay();
     }
 
     @Override
@@ -520,6 +532,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
                 keys.add(KEY_WIFI_TETHER_MAXIMIZE_COMPATIBILITY);
                 keys.add(KEY_WIFI_HOTSPOT_SPEED);
                 keys.add(KEY_INSTANT_HOTSPOT);
+                keys.add(KEY_WIFI_TETHER_HIDDEN_SSID);
             } else {
                 if (!isSpeedFeatureAvailable()) {
                     keys.add(KEY_WIFI_HOTSPOT_SECURITY);
