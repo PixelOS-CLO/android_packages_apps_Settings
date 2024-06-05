@@ -88,7 +88,6 @@ public class WifiHotspotSpeedViewModel extends AndroidViewModel {
         mWifiHotspotRepository.getSecurityType().observeForever(mSecurityTypeObserver);
         mCurrentSecurityType = mWifiHotspotRepository.getSecurityType().getValue();
 // QTI_END: 2024-03-07: WLAN: Tethering: Enable configuration of Enhanced Open (OWE) Security mode.
-        mWifiHotspotRepository.setAutoRefresh(true);
     }
 
     @Override
