@@ -106,6 +106,7 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
 
     public ImeiInfoPreferenceController(Context context, String key) {
         super(context, key);
+        mTelephonyManager = mContext.getSystemService(TelephonyManager.class);
     }
 
     public void init(Fragment fragment, SlotSimStatus slotSimStatus) {
@@ -157,7 +158,6 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
 // QTI_BEGIN: 2025-02-26: Telephony: Show both IMEIs when device is with single SIM
         mSlotCount = TelephonyUtils.getUiccSlotsCount(mContext);
 // QTI_END: 2025-02-26: Telephony: Show both IMEIs when device is with single SIM
-        mTelephonyManager = mContext.getSystemService(TelephonyManager.class);
 // QTI_BEGIN: 2023-08-11: Android_UI: Settings: Fix MEID not displayed in CT mode
         PreferenceCategory category = screen.findPreference(KEY_PREFERENCE_CATEGORY);
 // QTI_END: 2023-08-11: Android_UI: Settings: Fix MEID not displayed in CT mode
