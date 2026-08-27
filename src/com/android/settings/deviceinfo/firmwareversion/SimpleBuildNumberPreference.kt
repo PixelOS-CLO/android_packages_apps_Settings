@@ -60,10 +60,15 @@ class SimpleBuildNumberPreference :
         val isRtl = context.resources.configuration.layoutDirection == LAYOUT_DIRECTION_RTL
         val bidi = BidiFormatter.getInstance(isRtl)
 
+        val customSystemVersion = VersionUtils.getCustomSystemVersion()
         val customVersion = VersionUtils.getCustomVersion()
 
         return buildString {
           append(bidi.unicodeWrap(Build.DISPLAY))
+          if (customSystemVersion.isNotEmpty()) {
+            append("\n")
+            append(customSystemVersion)
+          }
           if (customVersion.isNotEmpty()) {
             append("\n")
             append(customVersion)
