@@ -22,4 +22,7 @@
 
     <!-- Whether to show the search box in the Setup Wizard locale picker. -->
     <bool name="config_show_setuplocalepicker_region_searchbox">true</bool>
+
+    <!-- aptX Settings -->
+    <string name="connected_device_codec_preference">Qualcomm® aptX™ Codec preferences</string>
 </resources>
