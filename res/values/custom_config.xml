@@ -25,4 +25,7 @@
 
     <!-- aptX Settings -->
     <string name="connected_device_codec_preference">Qualcomm® aptX™ Codec preferences</string>
+
+    <!-- Whether the face HAL supports the require attention feature -->
+    <bool name="config_face_attention_supported">true</bool>
 </resources>
