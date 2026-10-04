@@ -26,7 +26,7 @@
         <item>@string/network_traffic_mode_disable</item>
         <item>@string/network_traffic_mode_up</item>
         <item>@string/network_traffic_mode_down</item>
-        <item>@string/network_traffic_mode_all</item>
+        <item>@string/network_traffic_mode_dynamic</item>
     </string-array>
 
     <string-array name="network_traffic_mode_values" translatable="false">
@@ -34,22 +34,6 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
-    </string-array>
-
-    <string-array name="network_traffic_units_entries" translatable="false">
-        <item>@string/network_traffic_units_kilobits</item>
-        <item>@string/network_traffic_units_megabits</item>
-        <item>@string/network_traffic_units_kilobytes</item>
-        <item>@string/network_traffic_units_megabytes</item>
-        <item>@string/network_traffic_units_auto</item>
-    </string-array>
-
-    <string-array name="network_traffic_units_values" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
     </string-array>
 
     <!-- Locale Picker -->
@@ -84,4 +68,18 @@
         <item>es-US</item>
     </array>
 
+    <string-array name="network_traffic_refresh_entries" translatable="false">
+        <item>@string/network_traffic_refresh_one_second</item>
+        <item>@string/network_traffic_refresh_two_seconds</item>
+        <item>@string/network_traffic_refresh_five_seconds</item>
+    </string-array>
+    <string-array name="network_traffic_refresh_values" translatable="false">
+        <item>1</item><item>2</item><item>5</item>
+    </string-array>
+    <string-array name="network_traffic_threshold_entries" translatable="false">
+        <item>1 KB/s</item><item>5 KB/s</item><item>10 KB/s</item><item>50 KB/s</item>
+    </string-array>
+    <string-array name="network_traffic_threshold_values" translatable="false">
+        <item>1</item><item>5</item><item>10</item><item>50</item>
+    </string-array>
 </resources>
