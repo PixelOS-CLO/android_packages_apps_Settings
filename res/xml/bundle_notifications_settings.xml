@@ -46,7 +46,7 @@
         </com.android.settingslib.widget.UntitledPreferenceCategory>
 
         <com.android.settingslib.widget.UntitledPreferenceCategory>
-            <SwitchPreferenceCompat
+            <org.sun.custom.preference.SwitchPreferenceCompat
                 android:key="work_profile_pref"
                 android:title="@string/notification_adjustment_work_switch_title" />
         </com.android.settingslib.widget.UntitledPreferenceCategory>

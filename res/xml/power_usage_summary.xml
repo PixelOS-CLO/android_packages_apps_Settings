@@ -70,7 +70,7 @@
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:key="percentage_category">
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="status_bar_show_battery_percent"
             android:title="@string/battery_percentage"
             android:summary="@string/battery_percentage_description"

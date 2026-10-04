@@ -156,7 +156,7 @@ public class BluetoothDetailsProfilesController extends BluetoothDetailsControll
      */
     private TwoStatePreference createProfilePreference(Context context,
             LocalBluetoothProfile profile) {
-        TwoStatePreference pref = new SwitchPreferenceCompat(context);
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(context);
         pref.setKey(profile.toString());
         pref.setTitle(profile.getNameResource(mCachedDevice.getDevice()));
         pref.setOnPreferenceClickListener(this);
@@ -500,7 +500,7 @@ public class BluetoothDetailsProfilesController extends BluetoothDetailsControll
         BluetoothDevice device = mCachedDevice.getDevice();
         A2dpProfile a2dp = (A2dpProfile) profile;
         if (a2dp.isProfileReady() && a2dp.supportsHighQualityAudio(device)) {
-            TwoStatePreference highQualityAudioPref = new SwitchPreferenceCompat(
+            TwoStatePreference highQualityAudioPref = new org.sun.custom.preference.SwitchPreferenceCompat(
                     mProfilesContainer.getContext());
             highQualityAudioPref.setKey(HIGH_QUALITY_AUDIO_PREF_TAG);
             highQualityAudioPref.setVisible(false);

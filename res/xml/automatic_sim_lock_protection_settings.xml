@@ -26,7 +26,7 @@
             android:key="first_active_slot_intro"
             android:selectable="false" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="sim_pin_manual_management_only_toggle_0"
             android:title="@string/sim_auto_pin_management_toggle"
             settings:controller="com.android.settings.security.SimPinProtectionToggleController"/>
@@ -51,7 +51,7 @@
             android:key="second_active_slot_intro"
             android:selectable="false" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="sim_pin_manual_management_only_toggle_1"
             android:title="@string/sim_auto_pin_management_toggle"
             settings:controller="com.android.settings.security.SimPinProtectionToggleController"/>

@@ -58,7 +58,7 @@
             android:title="@string/mode_interruption_filter_title"
             android:key="modes_filters">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="allow_all"
             android:title="@string/zen_mode_allow_all_notifications"/>
 

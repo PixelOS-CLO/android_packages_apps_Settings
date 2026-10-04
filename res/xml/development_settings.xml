@@ -80,7 +80,7 @@
             android:summary="@string/oem_unlock_enable_summary"
             settings:useAdditionalSummary="true" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_16k_pages"
             android:title="@string/enable_16k_pages"
             android:summary="@string/enable_16k_pages_summary"/>
@@ -104,12 +104,12 @@
         <Preference android:key="webview_launch_devtools"
                     android:title="@string/webview_launch_devtools_title" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="color_temperature"
             android:title="@string/color_temperature"
             android:summary="@string/color_temperature_desc" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="ota_disable_automatic_update"
             android:title="@string/ota_disable_automatic_update"
             android:summary="@string/ota_disable_automatic_update_summary" />
@@ -157,18 +157,18 @@
         <Preference android:key="clear_adb_keys"
             android:title="@string/clear_adb_keys" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_adb_root"
             android:title="@string/adb_enable_root"
             android:summary="@string/adb_enable_summary_root"
             android:persistent="false" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="adb_authorization_timeout"
             android:title="@string/adb_authorization_timeout_title"
             android:summary="@string/adb_authorization_timeout_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_terminal"
             android:title="@string/enable_terminal_title"
             android:summary="@string/enable_terminal_summary" />
@@ -179,34 +179,34 @@
             android:summary="@string/enable_linux_terminal_summary"
             android:fragment="com.android.settings.development.linuxterminal.LinuxTerminalDashboardFragment" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bugreport_in_power"
             android:title="@string/bugreport_in_power"
             android:summary="@string/bugreport_in_power_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_verbose_vendor_logging"
             android:title="@string/enable_verbose_vendor_logging"
             android:summary="@string/enable_verbose_vendor_logging_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="verbose_printer_logging"
             android:summary="@string/verbose_printer_logging_summary"
             android:title="@string/verbose_printer_logging_title" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="automatic_system_server_heap_dumps"
             android:title="@string/automatic_system_heap_dump_title"
             android:summary="@string/automatic_system_heap_dump_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="debug_view_attributes"
             android:title="@string/debug_view_attributes" />
 
         <Preference android:key="debug_app"
                     android:title="@string/debug_app" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="wait_for_debugger"
             android:title="@string/wait_for_debugger"
             android:summary="@string/wait_for_debugger_summary" />
@@ -216,7 +216,7 @@
             android:title="@string/verify_apps_over_usb_title"
             android:summary="@string/verify_apps_over_usb_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="art_verifier_for_debuggable"
             android:title="@string/art_verifier_for_debuggable_title"
             android:summary="@string/art_verifier_for_debuggable_summary" />
@@ -235,7 +235,7 @@
             android:entries="@array/select_logpersist_titles"
             android:entryValues="@array/select_logpersist_values" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="camera_laser_sensor_switch"
             android:title="@string/camera_laser_sensor_switch" />
 
@@ -244,17 +244,17 @@
             android:title="@string/feature_flags_dashboard_title"
             android:fragment="com.android.settings.development.featureflags.FeatureFlagsDashboard" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_gpu_debug_layers"
             android:title="@string/enable_gpu_debug_layers"
             android:summary="@string/enable_gpu_debug_layers_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_angle_as_system_driver"
             android:title="@string/enable_angle_as_system_driver"
             android:summary="@string/enable_angle_as_system_driver_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="disable_game_default_frame_rate"
             android:title="@string/disable_game_default_frame_rate_title"
             android:summary="@string/disable_game_default_frame_rate_summary"/>
@@ -272,27 +272,27 @@
             settings:controller="com.android.settings.spa.development.compat.PlatformCompatPreferenceController"
             />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_refresh_rate"
             android:title="@string/show_refresh_rate"
             android:summary="@string/show_refresh_rate_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_hdr_sdr_ratio"
             android:title="@string/show_hdr_sdr_ratio"
             android:summary="@string/show_hdr_sdr_ratio_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="overlay_settings"
             android:title="@string/overlay_settings_title"
             android:summary="@string/overlay_settings_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="pref_key_peak_refresh_rate"
             android:title="@string/force_high_refresh_rate_toggle"
             android:summary="@string/force_high_refresh_rate_desc" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="allow_mock_modem"
             android:title="@string/allow_mock_modem"
             android:summary="@string/allow_mock_modem_summary" />
@@ -313,32 +313,32 @@
             android:title="@string/bluetooth"
             android:fragment="com.android.settings.development.bluetooth.BluetoothDevelopmentSettingsFragment" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="wifi_display_certification"
             android:title="@string/wifi_display_certification"
             android:summary="@string/wifi_display_certification_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="wifi_verbose_logging"
             android:title="@string/wifi_verbose_logging"
             android:summary="@string/wifi_verbose_logging_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="wifi_scan_throttling"
             android:title="@string/wifi_scan_throttling"
             android:summary="@string/wifi_scan_throttling_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="wifi_non_persistent_mac_randomization"
             android:title="@string/wifi_non_persistent_mac_randomization"
             android:summary="@string/wifi_non_persistent_mac_randomization_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="mobile_data_always_on"
             android:title="@string/mobile_data_always_on"
             android:summary="@string/mobile_data_always_on_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="tethering_hardware_offload"
             android:title="@string/tethering_hardware_offload"
             android:summary="@string/tethering_hardware_offload_summary" />
@@ -361,12 +361,12 @@
             android:title="@string/bluetooth_xpan_devoption_title"
             android:summary="@string/bluetooth_xpan_devoption_description"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="nfc_verbose_vendor_log"
             android:title="@string/nfc_verbose_vendor_log_title"
             android:summary="@string/nfc_verbose_vendor_log_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="nfc_snoop_log"
             android:title="@string/nfc_snoop_log_title"
             android:summary="@string/nfc_snoop_log_summary"/>
@@ -378,22 +378,22 @@
         android:title="@string/debug_input_category"
         android:order="500">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_touches"
             android:title="@string/show_touches"
             android:summary="@string/show_touches_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="pointer_location"
             android:title="@string/pointer_location"
             android:summary="@string/pointer_location_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_key_presses"
             android:title="@string/show_key_presses"
             android:summary="@string/show_key_presses_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="touchpad_visualizer"
             android:title="@string/touchpad_visualizer"
             android:summary="@string/touchpad_visualizer_summary" />
@@ -405,17 +405,17 @@
         android:title="@string/debug_drawing_category"
         android:order="600">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_screen_updates"
             android:title="@string/show_screen_updates"
             android:summary="@string/show_screen_updates_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="debug_layout"
             android:title="@string/debug_layout"
             android:summary="@string/debug_layout_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_rtl_layout_all_locales"
             android:title="@string/force_rtl_layout_all_locales"
             android:summary="@string/force_rtl_layout_all_locales_summary" />
@@ -466,7 +466,7 @@
             android:title="@string/display_cutout_emulation"
             settings:keywords="@string/display_cutout_emulation_keywords" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="transparent_navigation_bar"
             android:title="@string/transparent_navigation_bar"
             android:summary="@string/transparent_navigation_bar_summary" />
@@ -483,12 +483,12 @@
         android:title="@string/debug_hw_drawing_category"
         android:order="700">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_hw_screen_updates"
             android:title="@string/show_hw_screen_updates"
             android:summary="@string/show_hw_screen_updates_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_hw_layers_updates"
             android:title="@string/show_hw_layers_updates"
             android:summary="@string/show_hw_layers_updates_summary" />
@@ -505,21 +505,21 @@
             android:entries="@array/show_non_rect_clip_entries"
             android:entryValues="@array/show_non_rect_clip_values" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="hwui_force_dark"
             android:title="@string/hwui_force_dark_title"
             android:summary="@string/hwui_force_dark_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_blurs_on_windows"
             android:title="@string/window_blurs"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_msaa"
             android:title="@string/force_msaa"
             android:summary="@string/force_msaa_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="disable_overlays"
             android:title="@string/disable_overlays"
             android:summary="@string/disable_overlays_summary" />
@@ -560,7 +560,7 @@
         android:title="@string/debug_monitoring_category"
         android:order="900">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="strict_mode"
             android:title="@string/strict_mode"
             android:summary="@string/strict_mode_summary" />
@@ -579,7 +579,7 @@
         android:title="@string/debug_applications_category"
         android:order="1000">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="immediately_destroy_activities"
             android:title="@string/immediately_destroy_activities"
             android:summary="@string/immediately_destroy_activities_summary" />
@@ -595,12 +595,12 @@
             android:fragment="com.android.settings.applications.appops.BackgroundCheckSummary"
             android:title="@string/background_check_pref" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_first_crash_dialog"
             android:title="@string/show_first_crash_dialog"
             android:summary="@string/show_first_crash_dialog_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_all_anrs"
             android:title="@string/show_all_anrs"
             android:summary="@string/show_all_anrs_summary" />
@@ -611,12 +611,12 @@
             android:entries="@array/cached_apps_freezer_entries"
             android:entryValues="@array/cached_apps_freezer_values" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_notification_channel_warnings"
             android:title="@string/show_notification_channel_warnings"
             android:summary="@string/show_notification_channel_warnings_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="disable_screen_share_protections_for_apps_and_notifications"
             android:title="@string/disable_screen_share_protections_for_apps_and_notifications"
             android:summary="@string/disable_screen_share_protections_for_apps_and_notifications_summary" />
@@ -631,7 +631,7 @@
             android:title="@string/inactive_apps_title"
             android:fragment="com.android.settings.fuelgauge.InactiveApps" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_allow_on_external"
             android:title="@string/force_allow_on_external"
             android:summary="@string/force_allow_on_external_summary" />
@@ -640,23 +640,23 @@
             android:key="reset_shortcut_manager_throttling"
             android:title="@string/reset_shortcut_manager_throttling" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="disable_phantom_process_monitor"
             android:title="@string/disable_phantom_process_monitor_title"
             android:summary="@string/disable_phantom_process_monitor_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_enable_notes_role"
             android:title="@string/enable_notes_role_title"
             android:summary="@string/enable_notes_role_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_webapp_minter"
             android:title="@string/enable_webapp_minter_title"
             android:summary="@string/enable_webapp_minter_summary" />
 
         <!-- Spoofing toggle -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="certified_props"
             android:title="@string/cert_overlay_title"
             android:summary="@string/cert_overlay_summary" />
@@ -680,29 +680,29 @@
         android:title="@string/window_management_category"
         android:order="1100">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_resizable_activities"
             android:title="@string/force_resizable_activities"
             android:summary="@string/force_resizable_activities_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_non_resizable_multi_window"
             android:title="@string/enable_non_resizable_multi_window"
             android:summary="@string/enable_non_resizable_multi_window_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="override_desktop_mode_features"
             android:title="@string/enable_desktop_mode" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_freeform_support"
             android:title="@string/enable_freeform_support" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="override_desktop_experience_features"
             android:title="@string/enable_desktop_experience_features"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="force_desktop_mode_on_external_displays"
             android:title="@string/enable_desktop_mode_on_secondary_display"/>
 
@@ -758,7 +758,7 @@
         <Preference android:key="mock_location_app"
                     android:title="@string/mock_location_app" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="enable_gnss_raw_meas_full_tracking"
             android:title="@string/enable_gnss_raw_meas_full_tracking"
             android:summary="@string/enable_gnss_raw_meas_full_tracking_summary" />
@@ -769,7 +769,7 @@
         android:title="@string/input_method_category"
         android:order="1500">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="stylus_handwriting"
             android:title="@string/stylus_handwriting"
             android:defaultValue="true"

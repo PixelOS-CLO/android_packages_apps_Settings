@@ -83,7 +83,7 @@ public class DevelopmentTilePreferenceController extends BasePreferenceControlle
                     || ((enabledSetting == PackageManager.COMPONENT_ENABLED_STATE_DEFAULT)
                     && sInfo.enabled);
 
-            TwoStatePreference preference = new SwitchPreferenceCompat(context);
+            TwoStatePreference preference = new org.sun.custom.preference.SwitchPreferenceCompat(context);
             preference.setTitle(sInfo.loadLabel(mPackageManager));
             preference.setIcon(sInfo.icon);
             preference.setKey(sInfo.name);

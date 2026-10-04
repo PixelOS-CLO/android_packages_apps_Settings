@@ -661,7 +661,7 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                         .setWidgetLayoutResource(R.layout.preference_external_action_icon);
                 return externalActionPreference;
             case SWITCH:
-                return new SwitchPreferenceCompat(getPrefContext());
+                return new org.sun.custom.preference.SwitchPreferenceCompat(getPrefContext());
             case SWITCH_WITH_ACTION:
                 return new PrimarySwitchPreference(getPrefContext());
             case GROUP:

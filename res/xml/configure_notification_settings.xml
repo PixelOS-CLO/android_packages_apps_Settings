@@ -122,7 +122,7 @@
             android:summary="@string/lock_screen_notifs_redact_work_summary"
             settings:controller="com.android.settings.notification.RedactNotificationPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="notification_lockscreen_bypass"
             android:order="17"
             android:title="@string/lockscreen_bypass_title"
@@ -150,7 +150,7 @@
             android:title="@string/notification_polite_title"
             settings:controller="com.android.settings.notification.PoliteNotificationsPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="lock_screen_notif_minimalism"
             android:order="20"
             android:title="@string/lock_screen_notif_minimalism"
@@ -158,7 +158,7 @@
             settings:controller="com.android.settings.notification.LockscreenNotificationMinimalismPreferenceController"
             />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="lock_screen_show_only_unseen_notifs"
             android:order="21"
             android:title="@string/unseen_notifs_lock_screen"
@@ -193,33 +193,33 @@
             android:fragment="com.android.settings.system.ShadePanelsFragment"
             settings:controller="com.android.settings.system.ShadePanelsPreferenceController"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
              android:key="silent_icons"
              android:order="25"
              android:title="@string/silent_notifications_status_bar"
              settings:controller="com.android.settings.notification.SilentStatusBarPreferenceController"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="show_snooze_options"
             android:order="26"
             android:title="@string/snooze_options_title"
             settings:controller="com.android.settings.notification.SnoozeNotificationPreferenceController" />
 
         <!-- Notification badging -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="notification_badging"
             android:order="27"
             android:title="@string/notification_badging_title"
             settings:controller="com.android.settings.notification.BadgingNotificationPreferenceController"/>
 
         <!-- Pulse notification light, on devices that support it -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="notification_pulse"
             android:order="28"
             android:title="@string/notification_pulse_title"
             settings:controller="com.android.settings.notification.PulseNotificationPreferenceController"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="notification_assistant"
             android:order="29"
             android:title="@string/notification_assistant_title"

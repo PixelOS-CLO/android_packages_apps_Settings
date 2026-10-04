@@ -87,3 +87,7 @@
 
 # Keep the device state AppFunction schema
 -keep class com.google.android.appfunctions.schema.common.v1.devicestate.** { *; }
+
+-keep public class org.sun.settings.accessibility.CustomHapticFeedbackSettings {
+    public <init>();
+}

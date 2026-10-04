@@ -160,7 +160,7 @@
         android:persistent="false"
         android:title="@string/audio_category_title">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="toggle_audio_description"
             android:persistent="false"
             android:icon="@drawable/ic_audio_description"

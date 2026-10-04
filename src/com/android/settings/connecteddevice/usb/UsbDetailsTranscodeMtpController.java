@@ -54,7 +54,7 @@ public class UsbDetailsTranscodeMtpController extends UsbDetailsController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreferenceCategory = screen.findPreference(getPreferenceKey());
-        mSwitchPreference = new SwitchPreferenceCompat(mPreferenceCategory.getContext());
+        mSwitchPreference = new org.sun.custom.preference.SwitchPreferenceCompat(mPreferenceCategory.getContext());
         mSwitchPreference.setTitle(R.string.usb_transcode_files);
         mSwitchPreference.setKey(KEY_USB_TRANSCODE_FILES);
         mSwitchPreference.setOnPreferenceClickListener(this);

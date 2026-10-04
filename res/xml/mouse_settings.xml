@@ -20,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/mouse_settings">
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="mouse_pointer_acceleration"
         android:title="@string/mouse_pointer_acceleration"
         android:summary="@string/mouse_pointer_acceleration_summary"
@@ -39,7 +39,7 @@
         settings:iconStartContentDescription="@string/mouse_pointer_speed_make_slower_desc"
         settings:controller="com.android.settings.inputmethod.MousePointerSpeedPreferenceController"/>
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="mouse_swap_primary_button"
         android:title="@string/mouse_swap_primary_button"
         android:summary="@string/mouse_swap_primary_button_summary"
@@ -55,14 +55,14 @@
         android:summary="@string/accessibility_pointer_and_touchpad_summary"
         settings:searchable="true"/>
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="mouse_reverse_vertical_scrolling"
         android:order="52"
         android:title="@string/mouse_reverse_vertical_scrolling"
         android:summary="@string/mouse_reverse_vertical_scrolling_summary"
         settings:controller="com.android.settings.inputmethod.MouseReverseVerticalScrollingPreferenceController" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:order="55"
         android:key="mouse_scrolling_acceleration"
         android:title="@string/mouse_scrolling_acceleration"

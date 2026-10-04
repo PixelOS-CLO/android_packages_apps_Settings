@@ -21,7 +21,7 @@ import android.util.FeatureFlagUtils;
 
 import androidx.preference.SwitchPreferenceCompat;
 
-public class FeatureFlagPreference extends SwitchPreferenceCompat {
+public class FeatureFlagPreference extends org.sun.custom.preference.SwitchPreferenceCompat {
 
     private final String mKey;
     private final boolean mIsPersistent;

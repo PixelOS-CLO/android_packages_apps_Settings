@@ -58,7 +58,7 @@
         android:persistent="false"
         android:title="@string/accessibility_touchpad_title">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="touchpad_system_gestures_enable"
             android:summary="@string/accessibility_touchpad_system_gestures_enable_summary"
             android:title="@string/accessibility_touchpad_system_gestures_enable_title"

@@ -50,11 +50,11 @@
         android:key="hearing_device_routing_category"
         android:title="@string/accessibility_hearing_device_routing_title"
         settings:controller="com.android.settings.accessibility.HearingDeviceRoutingPreferenceController">
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="hearing_device_notification_routing"
             android:title="@string/accessibility_hearing_device_notification_routing_title"
             settings:controller="com.android.settings.accessibility.HearingDeviceNotificationRoutingSwitchPreferenceController" />
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="hearing_device_ringtone_alarm_routing"
             android:title="@string/accessibility_hearing_device_ringtone_alarm_routing_title"
             settings:controller="com.android.settings.accessibility.HearingDeviceRingtoneAlarmRoutingSwitchPreferenceController" />
@@ -69,7 +69,7 @@
             android:title="@string/accessibility_hearing_device_shortcut_title"
             settings:controller="com.android.settings.accessibility.ToggleShortcutPreferenceController"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="hearing_aid"
             android:title="@string/accessibility_hac_mode_title"
             android:summary="@string/accessibility_hac_mode_summary"

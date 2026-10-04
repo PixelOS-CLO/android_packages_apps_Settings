@@ -39,7 +39,7 @@
             android:entries="@array/bt_hci_snoop_log_entries"
             android:entryValues="@array/bt_hci_snoop_log_values" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bt_hci_snoop_log_socket"
             android:title="@string/bt_hci_snoop_log_socket_title"
             android:summary="@string/bt_hci_snoop_log_socket_summary" />
@@ -72,12 +72,12 @@
         android:title="General"
         android:order="200">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_show_devices_without_names"
             android:title="@string/bluetooth_show_devices_without_names"
             android:summary="@string/bluetooth_show_devices_without_names_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_disable_absolute_volume"
             android:title="@string/bluetooth_disable_absolute_volume"
             android:summary="@string/bluetooth_disable_absolute_volume_summary" />
@@ -109,24 +109,24 @@
             android:entries="@array/bluetooth_leaudio_mode"
             android:entryValues="@array/bluetooth_leaudio_mode_values"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_show_leaudio_device_details"
             android:title="@string/bluetooth_show_leaudio_device_details"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_bypass_leaudio_allowlist"
             android:title="@string/bluetooth_bypass_leaudio_allowlist"
             android:summary="@string/bluetooth_bypass_leaudio_allowlist_summary" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_disable_le_audio_hw_offload"
             android:title="@string/bluetooth_disable_le_audio_hw_offload" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_disable_a2dp_hw_offload"
             android:title="@string/bluetooth_disable_a2dp_hw_offload" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="bluetooth_hd_audio_settings"
             android:title="@string/bluetooth_profile_a2dp_high_quality_unknown_codec"/>
 

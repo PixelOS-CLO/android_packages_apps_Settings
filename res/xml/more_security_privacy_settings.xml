@@ -42,7 +42,7 @@
             android:summary="@string/unlock_set_unlock_mode_pattern"
             settings:keywords="@string/keywords_lockscreen" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="visiblepattern_profile"
             android:title="@string/lockpattern_settings_enable_visible_pattern_title_profile"
             settings:controller="com.android.settings.security.VisiblePatternProfilePreferenceController" />
@@ -90,7 +90,7 @@
             settings:controller="com.android.settings.notification.LockScreenNotificationsPreferencePageController" />
 
         <!-- Show media on lock screen -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="privacy_media_controls_lockscreen"
             android:title="@string/media_controls_lockscreen_title"
             android:summary="@string/media_controls_lockscreen_description"
@@ -98,7 +98,7 @@
                 "com.android.settings.sound.MediaControlsLockScreenPreferenceController" />
 
         <!-- Allow software fallback for camera extensions -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="privacy_camera_extensions_fallback"
             android:title="@string/camera_extensions_fallback_title"
             android:summary="@string/camera_extensions_fallback_description"
@@ -110,7 +110,7 @@
              ContentCaptureService implementations defines a custom settings activitiy on its manifest.
              Hence, we show both here, but the controller itself will decide if it's available or not.
         -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="content_capture"
             android:title="@string/content_capture"
             android:summary="@string/content_capture_summary"

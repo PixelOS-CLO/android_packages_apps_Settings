@@ -26,7 +26,7 @@ import androidx.preference.SwitchPreferenceCompat;
  *  This widget with enabled filterTouchesWhenObscured attribute use to replace
  *  the {@link SwitchPreferenceCompat} in the Special access app pages for security.
  */
-public class FilterTouchesSwitchPreference extends SwitchPreferenceCompat {
+public class FilterTouchesSwitchPreference extends org.sun.custom.preference.SwitchPreferenceCompat {
 
     public FilterTouchesSwitchPreference(Context context, AttributeSet attrs, int defStyleAttr,
             int defStyleRes) {

@@ -100,7 +100,7 @@ public class DeviceStateAutoRotateSettingController extends TogglePreferenceCont
 
     @Override
     public void displayPreference(PreferenceScreen screen) {
-        mPreference = new SwitchPreferenceCompat(mContext);
+        mPreference = new org.sun.custom.preference.SwitchPreferenceCompat(mContext);
         mPreference.setTitle(mDeviceStateDescription);
         mPreference.setKey(getPreferenceKey());
         mPreference.setOrder(mOrder);

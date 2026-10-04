@@ -41,7 +41,7 @@
             android:key="global_pref"
             android:title="@string/notification_summarization_main_control_title" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="work_profile_pref"
             android:title="@string/notification_adjustment_work_switch_title" />
 

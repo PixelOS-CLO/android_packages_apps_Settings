@@ -179,7 +179,7 @@ public class StylusDevicesController extends AbstractPreferenceController implem
     }
 
     private TwoStatePreference createButtonPressPreference() {
-        TwoStatePreference pref = new SwitchPreferenceCompat(mContext);
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(mContext);
         pref.setKey(KEY_IGNORE_BUTTON);
         pref.setTitle(mContext.getString(R.string.stylus_ignore_button));
         pref.setIcon(R.drawable.ic_block);
@@ -197,7 +197,7 @@ public class StylusDevicesController extends AbstractPreferenceController implem
             // If the config is not enabled, no need to show the preference to user
             return null;
         }
-        SwitchPreferenceCompat pref = preference == null ? new SwitchPreferenceCompat(mContext)
+        SwitchPreferenceCompat pref = preference == null ? new org.sun.custom.preference.SwitchPreferenceCompat(mContext)
                 : preference;
         pref.setKey(KEY_SHOW_STYLUS_POINTER_ICON);
         pref.setTitle(mContext.getString(R.string.show_stylus_pointer_icon));

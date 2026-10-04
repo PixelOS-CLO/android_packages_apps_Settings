@@ -61,7 +61,7 @@ public class RefreshRateSettings extends RadioButtonPickerFragment {
 
     @Override
     protected void addStaticPreferences(PreferenceScreen screen) {
-        mVrrSwitchPref = new SwitchPreferenceCompat(screen.getContext());
+        mVrrSwitchPref = new org.sun.custom.preference.SwitchPreferenceCompat(screen.getContext());
         mVrrSwitchPref.setKey(KEY_VRR_PREF);
         mVrrSwitchPref.setTitle(R.string.refresh_rate_vrr_title);
         mVrrSwitchPref.setSummary(R.string.refresh_rate_vrr_summary);

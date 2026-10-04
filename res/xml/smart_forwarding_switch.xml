@@ -5,7 +5,7 @@
     android:key="smart_forwarding_preference"
     android:title="@string/smart_forwarding_title">
 
-      <SwitchPreferenceCompat
+      <org.sun.custom.preference.SwitchPreferenceCompat
           android:key="smart_forwarding_switch"
           android:title="@string/smart_forwarding_title"
           android:summaryOff="@string/smart_forwarding_summary_disabled"

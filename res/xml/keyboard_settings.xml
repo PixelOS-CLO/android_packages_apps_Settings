@@ -32,7 +32,7 @@
             android:title="@string/physical_keyboard_title"
             android:summary="@string/summary_placeholder"/>
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="ime_switcher_button_in_navbar_enabled"
             android:title="@string/ime_switcher_button_in_navbar_title"
             android:summary="@string/ime_switcher_button_in_navbar_summary"
@@ -67,7 +67,7 @@
             settings:controller="com.android.settings.custom.touch.TouchHoveringSettingsPreferenceController" />
     </PreferenceCategory>
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="vibrate_input_devices"
         android:title="@string/vibrate_input_devices"
         android:summary="@string/vibrate_input_devices_summary"

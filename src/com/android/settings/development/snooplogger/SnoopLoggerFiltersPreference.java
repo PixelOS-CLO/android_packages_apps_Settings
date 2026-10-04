@@ -24,7 +24,7 @@ import androidx.preference.SwitchPreferenceCompat;
 /**
  * Bluetooth Snoop Logger Filters Preference
  */
-public class SnoopLoggerFiltersPreference extends SwitchPreferenceCompat {
+public class SnoopLoggerFiltersPreference extends org.sun.custom.preference.SwitchPreferenceCompat {
 
     private final String mKey;
     private static final String TAG = "SnoopLoggerFiltersPreference";

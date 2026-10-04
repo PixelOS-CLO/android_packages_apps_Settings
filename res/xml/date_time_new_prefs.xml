@@ -58,7 +58,7 @@
             settings:controller="com.android.settings.datetime.LocationProviderStatusPreferenceController"/>
 
         <!-- This preference gets removed if location-based time zone detection is not supported -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="location_time_zone_detection"
             android:title="@string/location_time_zone_detection_toggle_title"
             android:summary="@string/summary_placeholder"

@@ -25,7 +25,7 @@
         android:key="keyboard_a11y_page_category"
         android:title="@string/keyboard_a11y_category">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="keyboard_a11y_page_sticky_keys"
             android:title="@string/sticky_keys"
             android:summary="@string/sticky_keys_summary"

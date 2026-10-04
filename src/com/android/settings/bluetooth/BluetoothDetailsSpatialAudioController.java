@@ -223,7 +223,7 @@ public class BluetoothDetailsSpatialAudioController extends BluetoothDetailsCont
 
     @VisibleForTesting
     TwoStatePreference createSpatialAudioPreference(Context context) {
-        TwoStatePreference pref = new SwitchPreferenceCompat(context);
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(context);
         pref.setKey(KEY_SPATIAL_AUDIO);
         pref.setTitle(context.getString(R.string.bluetooth_details_spatial_audio_title));
         pref.setSummary(context.getString(R.string.bluetooth_details_spatial_audio_summary));
@@ -233,7 +233,7 @@ public class BluetoothDetailsSpatialAudioController extends BluetoothDetailsCont
 
     @VisibleForTesting
     TwoStatePreference createHeadTrackingPreference(Context context) {
-        TwoStatePreference pref = new SwitchPreferenceCompat(context);
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(context);
         pref.setKey(KEY_HEAD_TRACKING);
         pref.setTitle(context.getString(R.string.bluetooth_details_head_tracking_title));
         pref.setSummary(context.getString(R.string.bluetooth_details_head_tracking_summary));

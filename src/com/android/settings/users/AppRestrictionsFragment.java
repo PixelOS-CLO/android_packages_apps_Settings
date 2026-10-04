@@ -141,7 +141,7 @@ public class AppRestrictionsFragment extends SettingsPreferenceFragment implemen
         }
     };
 
-    static class AppRestrictionsPreference extends SwitchPreferenceCompat {
+    static class AppRestrictionsPreference extends org.sun.custom.preference.SwitchPreferenceCompat {
         private boolean hasSettings;
         private OnClickListener listener;
         private ArrayList<RestrictionEntry> restrictions;
@@ -740,7 +740,7 @@ public class AppRestrictionsFragment extends SettingsPreferenceFragment implemen
             Preference p = null;
             switch (entry.getType()) {
             case RestrictionEntry.TYPE_BOOLEAN:
-                p = new SwitchPreferenceCompat(getPrefContext());
+                p = new org.sun.custom.preference.SwitchPreferenceCompat(getPrefContext());
                 p.setTitle(entry.getTitle());
                 p.setSummary(entry.getDescription());
                 ((TwoStatePreference) p).setChecked(entry.getSelectedState());

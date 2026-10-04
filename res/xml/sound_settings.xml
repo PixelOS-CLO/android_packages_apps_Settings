@@ -195,31 +195,31 @@
         android:order="-111"
         android:title="@string/system_sounds_and_vibrations_category_title">
         <!-- Dial pad tones -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="dtmf_tone"
             android:title="@string/dial_pad_tones_title"
             android:order="-50"/>
 
         <!-- Screen locking sounds -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="lockscreen_sounds_enabled"
             android:title="@string/screen_locking_sounds_title"
             android:order="-45"/>
 
         <!-- Charging sounds -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="charging_sounds_enabled"
             android:title="@string/charging_sounds_title"
             android:order="-40"/>
 
         <!-- Docking sounds -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="dock_sounds_enabled"
             android:title="@string/docking_sounds_title"
             android:order="-35"/>
 
         <!-- Touch sounds -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="sound_effects_enabled"
             android:title="@string/touch_sounds_title"
             android:order="-30"/>
@@ -232,7 +232,7 @@
             android:order="-28" />
 
         <!-- Show vibrate icon in status bar -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="vibrate_icon"
             android:title="@string/vibrate_icon_title"
             android:order="-27"/>
@@ -245,7 +245,7 @@
             android:order="-20"/>
 
         <!-- Boot sounds -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="boot_sounds"
             android:title="@string/boot_sounds_title"
             android:order="-15"/>

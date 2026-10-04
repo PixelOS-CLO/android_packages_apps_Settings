@@ -32,7 +32,7 @@ import com.android.settings.R;
 import com.android.settingslib.widget.AnimatedImageView;
 import com.android.settingslib.widget.SettingsThemeHelper;
 
-public class SyncStateSwitchPreference extends SwitchPreferenceCompat {
+public class SyncStateSwitchPreference extends org.sun.custom.preference.SwitchPreferenceCompat {
 
     private boolean mIsActive = false;
     private boolean mIsPending = false;

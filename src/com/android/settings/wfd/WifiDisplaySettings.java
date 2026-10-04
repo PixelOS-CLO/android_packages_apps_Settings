@@ -398,7 +398,7 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
         }
 
         // switch for Listen Mode
-        TwoStatePreference pref = new SwitchPreferenceCompat(getPrefContext()) {
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(getPrefContext()) {
             @Override
             protected void onClick() {
                 mListen = !mListen;
@@ -411,7 +411,7 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
         mCertCategory.addPreference(pref);
 
         // switch for Autonomous GO
-        pref = new SwitchPreferenceCompat(getPrefContext()) {
+        pref = new org.sun.custom.preference.SwitchPreferenceCompat(getPrefContext()) {
             @Override
             protected void onClick() {
                 mAutoGO = !mAutoGO;

@@ -134,6 +134,8 @@ public class SeekBarPreference extends RestrictedPreference
         view.itemView.setOnHoverListener(this);
         mSeekBar = (SeekBar) view.findViewById(
                 com.android.internal.R.id.seekbar);
+        mSeekBar.setAutomaticHapticFeedbackEnabled(
+                mHapticFeedbackMode == HAPTIC_FEEDBACK_MODE_NONE);
         mSeekBar.setOnSeekBarChangeListener(this);
         mSeekBar.setMax(mMax);
         mSeekBar.setMin(mMin);
@@ -266,6 +268,10 @@ public class SeekBarPreference extends RestrictedPreference
      */
     public void setHapticFeedbackMode(int hapticFeedbackMode) {
         mHapticFeedbackMode = hapticFeedbackMode;
+        if (mSeekBar != null) {
+            mSeekBar.setAutomaticHapticFeedbackEnabled(
+                    hapticFeedbackMode == HAPTIC_FEEDBACK_MODE_NONE);
+        }
     }
 
     private void setProgress(int progress, boolean notifyChanged) {

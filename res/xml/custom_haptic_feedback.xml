@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The SunOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:title="@string/advanced_haptics_title">
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="back_gesture_vibration_preference_screen"
+        android:title="@string/back_gesture_vibration_title"
+        app:controller="org.sun.settings.accessibility.BackGestureVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="off_screen_gesture_vibration_preference_screen"
+        android:title="@string/off_screen_gesture_vibration_title"
+        app:controller="org.sun.settings.accessibility.OffScreenGestureVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="qs_tile_vibration_preference_screen"
+        android:title="@string/qs_tiles_vibration_title"
+        app:controller="org.sun.settings.accessibility.QSTileVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="slider_vibration_preference_screen"
+        android:title="@string/slider_vibration_title"
+        app:controller="org.sun.settings.accessibility.SliderVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="switch_vibration_preference_screen"
+        android:title="@string/switch_vibration_title"
+        app:controller="org.sun.settings.accessibility.SwitchVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="misc_scenes_vibration_preference_screen"
+        android:title="@string/misc_scenes_vibration_title"
+        app:controller="org.sun.settings.accessibility.MiscScenesVibrationPreferenceController" />
+
+    <PreferenceCategory
+        android:key="accessibility_vibration_effect_category"
+        android:title="@string/vibration_effect_category"
+        app:controller="org.sun.settings.accessibility.VibrationEffectCategoryPreferenceController">
+
+        <ListPreference
+            android:key="haptic_style_list"
+            android:title="@string/haptic_style_title"
+            app:controller="org.sun.settings.accessibility.HapticStyleListPreferenceController" />
+
+        <org.sun.custom.preference.SwitchPreferenceCompat
+            android:key="mechanical_keyboard_effect_preference_screen"
+            android:title="@string/keyboard_press_effect_title"
+            android:summary="@string/keyboard_press_effect_summary"
+            app:controller="org.sun.settings.accessibility.KeyboardEffectTogglePreferenceController" />
+
+
+
+    </PreferenceCategory>
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="haptics_face_unlock"
+        android:title="@string/face_unlock_vibration_title"
+        app:controller="org.sun.settings.accessibility.FaceUnlockVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="haptics_fingerprint_unlock"
+        android:title="@string/fingerprint_unlock_vibration_title"
+        app:controller="org.sun.settings.accessibility.FpUnlockVibrationPreferenceController" />
+
+    <org.sun.custom.preference.SwitchPreferenceCompat
+        android:key="haptics_force_ime"
+        android:title="@string/always_enable_keyboard_haptic_title"
+        app:controller="org.sun.settings.accessibility.ForceIMEHapticPreferenceController" />
+
+    <ListPreference
+        android:key="haptics_pattern_notification"
+        android:title="@string/vibration_pattern_notification_title"
+        app:controller="org.sun.settings.accessibility.NotificationVibrationPatternPreferenceController" />
+
+    <ListPreference
+        android:key="haptics_pattern_ringtone"
+        android:title="@string/vibration_pattern_ringtone_title"
+        app:controller="org.sun.settings.accessibility.RingtoneVibrationPatternPreferenceController" />
+
+</PreferenceScreen>

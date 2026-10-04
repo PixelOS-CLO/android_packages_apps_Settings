@@ -142,7 +142,7 @@ public class BluetoothDetailsDataSyncController extends BluetoothDetailsControll
 
     @VisibleForTesting
     TwoStatePreference createPermSyncPreference(Context context) {
-        TwoStatePreference pref = new SwitchPreferenceCompat(context);
+        TwoStatePreference pref = new org.sun.custom.preference.SwitchPreferenceCompat(context);
         pref.setKey(KEY_PERM_SYNC);
         pref.setTitle(context.getString(R.string.bluetooth_details_permissions_sync_title));
         pref.setSummary(context.getString(R.string.bluetooth_details_permissions_sync_summary));

@@ -278,7 +278,7 @@ open class SelectedDisplayPreferenceFragment(
     }
 
     private fun includeDefaultDisplayInTopologyPreference(): SwitchPreferenceCompat {
-        return SwitchPreferenceCompat(requireContext()).apply {
+        return org.sun.custom.preference.SwitchPreferenceCompat(requireContext()).apply {
             setTitle(PrefInfo.INCLUDE_DEFAULT_DISPLAY.titleResource)
             setSummary(R.string.builtin_display_settings_universal_cursor_description)
             key = PrefInfo.INCLUDE_DEFAULT_DISPLAY.key
@@ -462,7 +462,7 @@ open class SelectedDisplayPreferenceFragment(
     }
 
     private fun hdrPreference(): SwitchPreferenceCompat {
-        return SwitchPreferenceCompat(requireContext()).apply {
+        return org.sun.custom.preference.SwitchPreferenceCompat(requireContext()).apply {
             setTitle(PrefInfo.DISPLAY_HDR_PREFERENCE.titleResource)
             setSummary(R.string.hdr_preference_summary)
             key = PrefInfo.DISPLAY_HDR_PREFERENCE.key

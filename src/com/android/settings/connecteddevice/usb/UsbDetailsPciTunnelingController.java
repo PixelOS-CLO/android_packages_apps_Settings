@@ -52,7 +52,7 @@ public class UsbDetailsPciTunnelingController extends UsbDetailsController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreferenceCategory = screen.findPreference(getPreferenceKey());
-        mSwitchPreference = new SwitchPreferenceCompat(mPreferenceCategory.getContext());
+        mSwitchPreference = new org.sun.custom.preference.SwitchPreferenceCompat(mPreferenceCategory.getContext());
         mSwitchPreference.setTitle(R.string.usb_pci_tunnel_control);
         mSwitchPreference.setKey(KEY_USB_PCI_TUNNEL_CONTROL);
         mSwitchPreference.setOnPreferenceClickListener(this);

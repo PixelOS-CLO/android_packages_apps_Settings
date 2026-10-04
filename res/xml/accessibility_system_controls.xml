@@ -42,7 +42,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController"/>
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="incall_power_button_behavior"
         android:title="@string/accessibility_power_button_ends_call_prerefence_title"
         settings:controller="com.android.settings.accessibility.PowerButtonEndsCallPreferenceController"/>
@@ -52,7 +52,7 @@
          The item is not specific to Accessibility.
          The same entry is under Display & touch, which is unlikely to be removed,
          so this is not searchable.-->
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="toggle_lock_screen_rotation_preference"
         android:persistent="false"
         android:title="@string/accelerometer_title"

@@ -31,7 +31,7 @@ import com.android.settingslib.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ColorModePreference extends SwitchPreferenceCompat implements DisplayListener {
+public class ColorModePreference extends org.sun.custom.preference.SwitchPreferenceCompat implements DisplayListener {
 
     private DisplayManager mDisplayManager;
     private Display mDisplay;

@@ -172,7 +172,7 @@ public class PlatformCompatDashboard extends DashboardFragment {
     Preference createPreferenceForChange(Context context, CompatibilityChangeInfo change,
             CompatibilityChangeConfig configMappings) {
         final boolean currentValue = configMappings.isChangeEnabled(change.getId());
-        final TwoStatePreference item = new SwitchPreferenceCompat(context);
+        final TwoStatePreference item = new org.sun.custom.preference.SwitchPreferenceCompat(context);
         final String changeName =
                 change.getName() != null ? change.getName() : "Change_" + change.getId();
         item.setSummary(changeName);

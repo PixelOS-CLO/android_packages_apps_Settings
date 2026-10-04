@@ -87,7 +87,7 @@
         android:fragment="com.android.settings.gestures.VolumeButtonMusicControlGestureSettings"
         settings:controller="com.android.settings.gestures.VolumeButtonMusicControlPreferenceController" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="gesture_screen_off_udfps"
         android:title="@string/ambient_display_screen_off_udfps_title"
         android:summary="@string/ambient_display_screen_off_udfps_summary"

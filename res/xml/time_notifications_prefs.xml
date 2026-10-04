@@ -19,14 +19,14 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/time_notifications_title">
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="time_zone_change_notifications"
         android:title="@string/time_zone_change_notifications_toggle_title"
         android:summary="@string/summary_placeholder"
         settings:keywords="@string/keywords_time_notification_category"
         settings:controller="com.android.settings.datetime.TimeZoneNotificationsPreferenceController" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="time_zone_offset_change_notification"
         android:title="@string/time_zone_offset_change_notification_toggle_title"
         android:summary="@string/time_zone_offset_change_notification_toggle_summary"

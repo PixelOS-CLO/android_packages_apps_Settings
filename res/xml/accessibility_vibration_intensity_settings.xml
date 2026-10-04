@@ -35,7 +35,7 @@
             app:keywords="@string/keywords_ring_vibration"
             app:controller="com.android.settings.accessibility.RingVibrationIntensityPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="apply_ramping_ringer"
             android:title="@string/vibrate_when_ringing_option_ramping_ringer"
             app:keywords="@string/keywords_ramping_ringer_vibration"
@@ -77,7 +77,7 @@
             app:keywords="@string/keywords_media_vibration"
             app:controller="com.android.settings.accessibility.MediaVibrationIntensityPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="keyboard_vibration_enabled"
             android:title="@string/accessibility_keyboard_vibration_title"
             app:keywords="@string/keywords_keyboard_vibration"
@@ -88,6 +88,13 @@
             android:title="@string/accessibility_keyboard_vibration_title"
             app:keywords="@string/keywords_keyboard_vibration"
             app:controller="com.android.settings.accessibility.KeyboardVibrationIntensitySliderPreferenceController" />
+
+
+        <Preference
+            android:key="advanced_haptics"
+            android:title="@string/advanced_haptics_title"
+            android:summary="@string/advanced_haptics_summary"
+            android:fragment="org.sun.settings.accessibility.CustomHapticFeedbackSettings" />
 
     </PreferenceCategory>
 

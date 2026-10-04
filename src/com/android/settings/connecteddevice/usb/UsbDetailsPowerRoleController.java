@@ -61,7 +61,7 @@ public class UsbDetailsPowerRoleController extends UsbDetailsController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mPreferenceCategory = screen.findPreference(getPreferenceKey());
-        mSwitchPreference = new SwitchPreferenceCompat(mPreferenceCategory.getContext());
+        mSwitchPreference = new org.sun.custom.preference.SwitchPreferenceCompat(mPreferenceCategory.getContext());
         mSwitchPreference.setTitle(R.string.usb_use_power_only);
         mSwitchPreference.setKey(KEY_USB_USE_POWER_ONLY);
         mSwitchPreference.setOnPreferenceClickListener(this);

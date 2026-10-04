@@ -46,7 +46,7 @@ class DarkModeBlackThemePreference(context: Context, private val darkModeStorage
     }
 
     override fun createWidget(context: Context) =
-        SwitchPreferenceCompat(context).apply { isPersistent = false }
+        org.sun.custom.preference.SwitchPreferenceCompat(context).apply { isPersistent = false }
 
     fun isAvailable(context: Context): Boolean {
         return try {

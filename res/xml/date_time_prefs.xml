@@ -58,7 +58,7 @@
             settings:controller="com.android.settings.datetime.LocationProviderStatusPreferenceController"/>
 
         <!-- This preference gets removed if location-based time zone detection is not supported -->
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="location_time_zone_detection"
             android:title="@string/location_time_zone_detection_toggle_title"
             android:summary="@string/summary_placeholder"
@@ -87,7 +87,7 @@
         android:key="time_format_preference_category"
         android:title="@string/time_format_category_title">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="24_hour"
             android:title="@string/date_time_24hour"
             settings:keywords="@string/keywords_time_format"
@@ -100,14 +100,14 @@
         android:title="@string/time_notifications_title"
         settings:controller="com.android.settings.datetime.NotificationsPreferenceCategoryController">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="time_zone_change_notifications"
             android:title="@string/time_zone_change_notifications_toggle_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_time_notification_category"
             settings:controller="com.android.settings.datetime.TimeZoneNotificationsPreferenceController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="time_zone_offset_change_notification"
             android:title="@string/time_zone_offset_change_notification_toggle_title"
             android:summary="@string/time_zone_offset_change_notification_toggle_summary"

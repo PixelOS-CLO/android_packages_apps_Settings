@@ -23,25 +23,25 @@
     settings:searchable="false">
 
     <!-- available in pattern -->
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="visiblepattern"
         android:title="@string/lockpattern_settings_enable_visible_pattern_title" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="visible_error_pattern"
         android:title="@string/lockpattern_settings_enable_error_path_title" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="visibledots"
         android:title="@string/lockpattern_settings_enable_dots_title" />
 
     <!-- available in pin -->
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="auto_pin_confirm"
         android:title="@string/lock_screen_auto_pin_confirm_title"
         android:summary="@string/lock_screen_auto_pin_confirm_summary" />
 
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="enhancedPinPrivacy"
         android:title="@string/lockpattern_settings_enhanced_pin_privacy_title"
         android:summary="@string/lockpattern_settings_enhanced_pin_privacy_summary" />
@@ -55,12 +55,12 @@
         android:entryValues="@array/lock_after_timeout_values" />
 
     <!-- available in pin/pattern/password -->
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="power_button_instantly_locks"
         android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" />
 
     <!-- Lineage additions, available in pin/pattern/password/slide -->
-    <SwitchPreferenceCompat
+    <org.sun.custom.preference.SwitchPreferenceCompat
         android:key="lockscreen_scramble_pin_layout"
         android:title="@string/unlock_scramble_pin_layout_title"
         android:summary="@string/unlock_scramble_pin_layout_summary" />

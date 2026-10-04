@@ -31,7 +31,7 @@
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
         android:key="flash_notifications_category">
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="camera_flash_notification_preference"
             android:persistent="false"
             android:title="@string/camera_flash_notification_title"

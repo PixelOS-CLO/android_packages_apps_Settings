@@ -49,11 +49,11 @@
         android:title="@string/lockscreen_notification_what_to_show_title"
         settings:controller="com.android.settings.notification.LockScreenWhatToShowController">
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="lock_screen_notification_show_viewed_toggle"
             settings:controller="com.android.settings.notification.LockScreenNotificationShowViewedController" />
 
-        <SwitchPreferenceCompat
+        <org.sun.custom.preference.SwitchPreferenceCompat
             android:key="lock_screen_notification_show_silent_toggle"
             android:title="@string/lock_screen_notification_show_silent_title"
             settings:controller="com.android.settings.notification.LockScreenNotificationShowSilentController" />

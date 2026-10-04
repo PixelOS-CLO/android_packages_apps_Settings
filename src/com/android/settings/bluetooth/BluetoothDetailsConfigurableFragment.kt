@@ -297,7 +297,7 @@ abstract class BluetoothDetailsConfigurableFragment :
                     if (model.action == null) {
                         val pref =
                             existedPref as? SwitchPreferenceCompat
-                                ?: SwitchPreferenceCompat(requireContext())
+                                ?: org.sun.custom.preference.SwitchPreferenceCompat(requireContext())
                         pref.apply {
                             title = model.title
                             summary = model.summary
