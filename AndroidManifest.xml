@@ -1785,6 +1785,16 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
         </activity>
 
         <activity
+            android:name="Settings$NetworkTrafficSettingsActivity"
+            android:label="@string/network_traffic_settings_title"
+            android:exported="true">
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.custom.networktraffic.NetworkTrafficSettings" />
+            <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
+                android:value="@string/menu_key_system" />
+        </activity>
+
+        <activity
             android:name="Settings$RefreshRateSettingsActivity"
             android:label="@string/refresh_rate_title"
             android:exported="true">

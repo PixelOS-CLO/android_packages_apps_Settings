@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
+     SPDX-FileCopyrightText: PixelOS
      SPDX-License-Identifier: Apache-2.0
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
@@ -20,11 +21,20 @@
         android:title="@string/network_traffic_autohide" />
 
     <ListPreference
-        android:entries="@array/network_traffic_units_entries"
-        android:entryValues="@array/network_traffic_units_values"
-        android:key="network_traffic_units"
+        android:entries="@array/network_traffic_refresh_entries"
+        android:entryValues="@array/network_traffic_refresh_values"
+        android:key="network_traffic_refresh_interval"
         android:persistent="false"
         android:summary="%s"
-        android:title="@string/network_traffic_units_title" />
+        android:title="@string/network_traffic_refresh_title" />
+
+    <ListPreference
+        android:dependency="network_traffic_autohide"
+        android:entries="@array/network_traffic_threshold_entries"
+        android:entryValues="@array/network_traffic_threshold_values"
+        android:key="network_traffic_autohide_threshold"
+        android:persistent="false"
+        android:summary="%s"
+        android:title="@string/network_traffic_threshold_title" />
 
 </PreferenceScreen>

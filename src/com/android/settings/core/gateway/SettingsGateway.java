@@ -368,6 +368,7 @@ public class SettingsGateway {
             ResetDashboardFragment.class.getName(),
             NightDisplaySettings.class.getName(),
             RefreshRateSettings.class.getName(),
+            "com.android.settings.custom.networktraffic.NetworkTrafficSettings",
             ManageDomainUrls.class.getName(),
             AutomaticStorageManagerSettings.class.getName(),
             StorageDashboardFragment.class.getName(),
