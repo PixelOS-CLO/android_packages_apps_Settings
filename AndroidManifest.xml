@@ -4731,6 +4731,7 @@ SPDX-License-Identifier: BSD-3-Clause-Clear -->
 
         <activity
             android:name=".sim.SimDialogActivity"
+            android:taskAffinity="com.android.settings.sim.SimDialogActivity"
             android:theme="@style/Theme.AlertDialog.SimConfirmDialog"
             android:label="@string/sim_settings_title"
             android:launchMode="singleTop"
