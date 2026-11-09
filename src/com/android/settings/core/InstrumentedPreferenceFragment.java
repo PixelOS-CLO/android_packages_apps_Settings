@@ -21,6 +21,7 @@ import static com.android.internal.jank.InteractionJankMonitor.Configuration;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.HapticFeedbackConstants;
 
 import androidx.preference.Preference;
 import androidx.preference.TwoStatePreference;
@@ -33,6 +34,7 @@ import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.instrumentation.SettingsJankMonitor;
 import com.android.settingslib.core.instrumentation.VisibilityLoggerMixin;
+import com.android.settingslib.widget.MainSwitchPreference;
 
 /**
  * Instrumented fragment that logs visibility state.
@@ -69,9 +71,22 @@ public abstract class InstrumentedPreferenceFragment extends ObservablePreferenc
             if (preference instanceof TwoStatePreference twoStatePreference) {
                 SettingsJankMonitor.detectSwitchPreferenceClickJank(
                         getListView(), twoStatePreference);
+                performToggleHapticFeedback(twoStatePreference);
             }
             return onPreferenceTreeClick(preference);
         });
+    }
+
+    private void performToggleHapticFeedback(TwoStatePreference preference) {
+        // The main switch bar plays its own feedback from the switch widget.
+        if (preference instanceof MainSwitchPreference) {
+            return;
+        }
+        final RecyclerView listView = getListView();
+        if (listView != null) {
+            listView.performHapticFeedback(preference.isChecked()
+                    ? HapticFeedbackConstants.TOGGLE_ON : HapticFeedbackConstants.TOGGLE_OFF);
+        }
     }
 
     @Override
